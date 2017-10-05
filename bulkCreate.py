@@ -22,7 +22,7 @@ headers = {
     'cache-control': "no-cache"
 }
 response = requests.request("PUT", url, data=payload, headers=headers, 
-    auth=(usr,pass), verify=False)
+    auth=(usr,pwd), verify=False)
 
 #Response manipulation
 responselocation = response.headers['location']
