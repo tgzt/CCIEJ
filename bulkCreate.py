@@ -8,7 +8,7 @@ pwd = "ersM0"
 ise = "ise.secure-x.local"
 
 #Import XML file for NADs and make it useable
-xml = open('nad.xml', 'r')
+xml = open('sample-nad.xml', 'r')
 xml2 = xml.read()
 xml3 = ET.fromstring(xml2)
 payload =  ET.tostring(xml3, encoding='utf-8', method='xml')
